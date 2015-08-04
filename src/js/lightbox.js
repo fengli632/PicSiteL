@@ -4,7 +4,10 @@
         var self = this;
 
         this.settings = {
-            speed:500
+            speed:500，
+            maxWidth:900,
+            maxHeight:600,
+            maskOpacity:0.4
         };
 
         $.extend(this.settings,settings ||{})
@@ -183,6 +186,10 @@
                 winWidth = $(window).width(),
                 winHeight = $(window).height();
 
+                /*按设定参数设置图片区大小*/
+                /*winWidth = self.settings.maxWidth;
+                winHeight = self.settings.maxHeight;*/
+
             //如果图片的宽高大于浏览器视口的宽高比例，看下是否溢出
             
             var scale = Math.min(winWidth/(width+10),winHeight/(height+10),1);
@@ -243,10 +250,16 @@
             this.popupPic.hide();
             this.picCaptionArea.hide();
 
+             /*设置遮罩层透明度*/
+            this.popupMask.css({opacity:self.settings.maskOpacity});
             this.popupMask.fadeIn();
             //获取视口宽高
             var winWidth = $(window).width();
             var winHeight = $(window).height();
+
+            /*按设定参数设置图片加载区大小*/
+                /*winWidth = self.settings.maxWidth;
+                winHeight = self.settings.maxHeight;*/
             
             //设置图片区域宽度高度
             this.picViewArea.css({
