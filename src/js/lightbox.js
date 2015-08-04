@@ -252,10 +252,10 @@
             //获取视口宽高
             var winWidth = $(window).width();
             var winHeight = $(window).height();
-            
+
             /*var  winWidth = self.settings.maxWidth;
             var  winHeight = self.settings.maxHeight;*/
-
+            
             //设置图片区域宽度高度
             this.picViewArea.css({
                                  width:winWidth/2,
