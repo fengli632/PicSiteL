@@ -47,8 +47,9 @@ header {
    .header ul li{
     list-style: none;
     padding: 0;
-    margin: 0 5px; 
+    margin: 0 15px; 
     display: inline-block;
+     position: relative;
    }
    
    .header a{
@@ -90,9 +91,10 @@ header {
     margin: 0;
     border-bottom: 1px solid #fff;
     border-width: 80%;
-    border
+   
     
   }
+
   .header .current{
     display: block;
 
@@ -124,13 +126,14 @@ header {
     content: '';
     display: inline-block;
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -6px;
     width: 0;
     height: 0;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-bottom: 14px solid #f00;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
     
    }
    /* 主页图片列表 */

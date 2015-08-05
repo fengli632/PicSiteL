@@ -70,7 +70,7 @@
     margin: 0 5px;
     /* 要放在后面 */
     margin-top: -65px;
-    background: url(../../icon/opacity.png repeat left top);
+    background: url(../../icon/opacity.png ) repeat left top;
     font-size: 12px;
 }
 #G-lightbox-popup .lightbox-pic-caption .lightbox-caption-area{
