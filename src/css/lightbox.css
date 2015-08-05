@@ -13,7 +13,7 @@
     z-index: 1000;
     display: none;
     /* ie9以下半透明兼容性问题 */
-     background: url(../../icon/opacity.png repeat left top);
+     background: url(../../icon/opacity.png ) repeat left top;
 }
 #G-lightbox-popup{
     /* ie6不识别fixed */
@@ -40,7 +40,7 @@
     width: 30%;
     height: 100%;
     z-index: 1;
-    background: url(../../icon/transparent.png repeat left top);
+    background: url(../../icon/transparent.png ) repeat left top;
 }
 #G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn{
     left: 0;
